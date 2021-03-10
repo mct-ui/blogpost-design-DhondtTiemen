@@ -168,6 +168,40 @@ a:focus {
     color: #007db3;
 }
 
+/*
+    Components: Author
+*/
+
+.c-author{
+    display: flex; /*Plaatst de image en naam naast elkaar*/
+    align-items: center; /*Zet ze naast elkaar gecentreerd*/
+    gap: 16px; /*zelfde als margin-right maar handig voor flex*/
+    margin-bottom: 24px;
+}
+
+.c-author__image{
+    width: 56px;
+    height: 56px;
+    border-radius: 100%; /*Voor de cirkel rond te maken, werkt wel enkel als je afbeelding een vierkant is*/
+    /* margin-right: 16px; kan voor de witruimte tussen image en tekst*/
+}
+
+.c-author__name,
+.c-author__meta{
+    margin-bottom: 0;
+}
+
+.c-author__name{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.c-author__meta{
+    font-size: 14px;
+    font-family: "Inter Web", sans-serif;
+    line-height: 24px;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {}
